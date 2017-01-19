@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">电影</string>
+    <string name="submit">提交</string>
+    <string name="appname">看电影</string>
+    <string name="search_title">百度一下</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_test_button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+    tools:context="com.zeus.hello.moiveapp.TestButtonActivity">
+<Button
+    android:id="@+id/launchnew"
+    android:text="Launch new"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="launchActivity"/>
+    <Button
+        android:text="Launch Animation"
+    android:id="@+id/launchAnimation"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:onClick="launchActivity"
+        />
+    <Button
+        android:text="Launch ViewPagerActivity"
+        android:id="@+id/launchViewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="launchActivity"/>
+    <Button
+        android:id="@+id/launch2048"
+        android:text="Launch 2048Game!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="launchActivity"/>
+    <Button
+        android:id="@+id/launchpages"
+        android:text="Launch pages!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="launchActivity"/>
+
+</LinearLayout>
