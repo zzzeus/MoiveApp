@@ -32,6 +32,7 @@ public class ViewpagerActivity extends AppCompatActivity {
         mAdapter=new ImagePagerAdapter(getSupportFragmentManager(),imageResIds.length);
         mPager= (ViewPager) findViewById(R.id.pager);
         mPager.setAdapter(mAdapter);
+
         toolbar= (Toolbar) findViewById(R.id.viewpager_bar);
         setSupportActionBar(toolbar);
         pagerTitleStrip= (PagerTitleStrip) findViewById(R.id.pager_title);

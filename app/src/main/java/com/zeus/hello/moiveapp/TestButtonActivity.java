@@ -32,6 +32,15 @@ private final static String TAG="TESTButton";
             case R.id.launchpages:
                 startActivity(new Intent(TestButtonActivity.this,Main2Activity.class));
                 break;
+            case R.id.pictures:
+                startActivity(new Intent(TestButtonActivity.this,PictureActivity.class));
+                break;
+            case R.id.launch_wifi:
+                startActivity(new Intent(TestButtonActivity.this,WifiActivity.class));
+                break;
+            case R.id.launch_player:
+                startActivity(new Intent(TestButtonActivity.this,ExoPlayerActivity.class));
+                break;
         }
     }
 }

@@ -4,7 +4,7 @@ package com.zeus.hello.moiveapp;
  * Created by zhou on 2017/1/17.
  */
 
-public class MyMovie {
+public class MyMovie  {
 
 
     public String getMovieName() {
@@ -27,13 +27,13 @@ public class MyMovie {
         return country;
     }
 
-    private String movieName;
-    private String movieType;
-    private String releaseDate;
-    private String language;
-    private String country;
-    String title;
-    String link;
+    public String movieName;
+    public String movieType;
+    public String releaseDate;
+    public String language;
+    public String country;
+    public String title;
+    public String link;
 
     public MyMovie(String link, String title, String imageLink, String date, String info) {
         this.link = link;
@@ -43,9 +43,9 @@ public class MyMovie {
         this.info = info;
     }
 
-    String imageLink;
-    String date;
-    String info;
+    public String imageLink;
+    public String date;
+    public String info;
 
     public int getRuntime() {
         return runtime;

@@ -37,5 +37,22 @@ android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="launchActivity"/>
-
+    <Button
+        android:id="@+id/pictures"
+        android:text="@string/pictures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="launchActivity"/>
+    <Button
+        android:id="@+id/launch_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wifi"
+        android:onClick="launchActivity"/>
+    <Button
+        android:id="@+id/launch_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="play"
+        android:onClick="launchActivity"/>
 </LinearLayout>

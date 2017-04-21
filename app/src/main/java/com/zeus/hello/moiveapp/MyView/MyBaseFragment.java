@@ -1,5 +1,6 @@
 package com.zeus.hello.moiveapp.MyView;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -15,38 +16,26 @@ import com.zeus.hello.moiveapp.R;
  */
 
 public abstract class MyBaseFragment extends Fragment {
-    private View view;
-    private String title;
-    private  int layout_id;
+    protected View view;
+    protected String title;
+    protected   int layout_id;
+    protected Activity a;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
     {
         view=inflater.inflate(layout_id,container,false);
-        setComponets();
+        setComponets(view);
         return view;
     }
-    public void setArgs(String title, int layout_id){
+    public void setArgs(String title, int layout_id,Activity a){
         this.title=title;
         this.layout_id=layout_id;
+        this.a=a;
     }
-//    public void setTitles(String s){
-//        title=s;
-//    }
-//    public void setLayout_id(int i){
-//        layout_id=i;
-//    }
-    public abstract void  setComponets();
-//        switch (d){
-//            case 1:
-//                break;
-//            case 2:
-//                break;
-//            case 3:
-//                break;
-//            case 4:
-//                break;
-//        }
+
+    public abstract void  setComponets(View rootview);
+
 
 
 }
